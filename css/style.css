@@ -10,27 +10,20 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: var(--principal);
     box-sizing: border-box;
 }
 
 body{
     width: 100%;
     height: 100vh;
-    font-family: var(--principal);
 }
 
 nav{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 1rem  0;
-}
-
-.container{
-    width: 88%;
-    height: 44px;
-    display: flex;
-    justify-content: space-between;
 }
 
 #logo {
@@ -44,23 +37,7 @@ nav{
     margin-right: 8px;
 }
 
-.container ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-.container ul li{
-    margin-right: 32px;
-    width: 78px;
-    height: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: var(--principal);
-}
-
-a{
+nav a{
     text-decoration: none;
     color: black;
 }
@@ -85,8 +62,7 @@ a{
     border: none;
     margin-right: 18px;
     cursor: pointer;
-    font-family: var(--principal
-    );
+    font-family: var(--principal);
     font-size: 16px;
     background-color: #fff;
 }
@@ -99,21 +75,14 @@ a{
 
 /*fim nav*/
 
-main{
-    width: 100%;
-}
-
 #sobre{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 407px;
     width: 100%;
-}
-
-#sobre h2, p, span{
-    margin-bottom: 2rem;
+    gap: 2rem;
+    padding: 7rem 0;
 }
 
 #sobre span{
@@ -122,6 +91,7 @@ main{
 }
 
 #sobre h2{
+    text-align: center;
     font-size: 2.5rem;
 }
 
@@ -129,4 +99,36 @@ main{
     color: var(--text-color);
     max-width: 40rem;
     text-align: center;
+}
+
+/*fim sobre*/
+
+#metricas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#metricas div{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 2rem 0;
+}
+
+#metricas h1{
+    font-size: 2.5rem;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+#metricas h2{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#metricas p{
+    color: var(--text-color);
+    font-size: 1rem;
 }
