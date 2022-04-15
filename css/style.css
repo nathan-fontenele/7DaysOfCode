@@ -133,6 +133,8 @@ nav a{
     font-size: 1rem;
 }
 
+/*fim métricas*/
+
 #talentos{
     width: 100%;
     display: flex;
@@ -148,6 +150,7 @@ nav a{
     color: var(--main-color);
     background-color: #8e242411;
     padding: 10px;
+    width: 10rem;
     border-radius: 25px;
     font-weight: 500;
    text-decoration: none;
@@ -202,4 +205,78 @@ nav a{
     font-size: .9rem;
     margin-right: 1.5rem;
     color: var(--text-color);
+}
+
+/*fim informações*/
+
+#depoimento{
+    width: 90%;
+    background-color: #8e242411;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 96px auto;
+    text-align: center;
+}
+
+#depoimento span{
+    display: block;
+    line-height: 30px;
+}
+
+#depoimento h2{
+    margin: 16px 0 32px 0;
+    font: 500 1.3em var(--principal);
+}
+
+#depoimento p{
+    color: var(--main-color);
+    font-weight: bolder;
+}
+
+/*fim depoimento*/
+
+#rodape{
+    width: 100%;
+    line-height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#rodape h1{
+    font-size: 2.5rem;
+}
+
+#rodape p{
+    font-size: 1.3rem;
+    color: var(--text-color);
+}
+
+#rodape input{
+   width: 390px;
+   height: 49px;
+   outline: none;
+   border: 1px solid var(--text-color);
+   border-radius: 5px;
+   font-size: 1rem;
+   padding: 12px 16px;
+   margin-top: 40px;
+}
+
+#rodape button{
+    width: 116px;
+    height: 49px;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+}
+
+#rodape span{
+    color: var(--text-color);
+    margin-bottom: 96px;
 }
